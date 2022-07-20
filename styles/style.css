@@ -60,40 +60,40 @@ p{
     margin-right: 20px;
     
 }
-#box-one{
-    font-size: 15px;
-    font-weight: 700;
-    border-radius: 5px;
-    background-color: white;
-    text-decoration: none;
- margin-left: 10px;
- margin-top: 20px;
-    width: 180px;
-    height: 40px;
-}
-#box-two{
-    font-size: 15px;
-    font-weight: 700;
-    border-radius: 5px;
-    background-color: white;
-    text-decoration: none;
-    margin-left: 10px;
-    margin-top: 20px;
-    width: 180px;
-    height: 40px;
-}
-#box-three{
-    font-size: 15px;
-    font-weight: 700;
-    border-radius: 5px;
-    background-color: red;
-   text-decoration: none;
-   margin-left: 10px;
-   margin-top: 20px;
-   width: 180px;
-   height: 40px;
-   color: white;
-}
+
+    .full-box{
+        background-color: #161616;
+        border-radius: 10px;
+        width: 250px;
+        height: 300px;
+        margin-left: 130px;
+        margin-right: 20px;
+    }
+    .full-box a{
+        text-decoration: none;
+        font-size: 20px;
+        font-weight: 700;
+        color: #161616;
+        text-align: center;
+    }
+    .box{
+        background-color: #f3f1ff;
+        border-radius: 5px;
+        margin-left: 25px;
+        margin-top: 30px;
+        width: 200px;
+        height: 60px;
+    }
+    .select-box{
+        background-color: red;
+        border-radius: 5px;
+        margin-left: 25px;
+        margin-top: 30px;
+        width: 200px;
+        height: 60px;
+
+    }
+
 /* blog start */
 .dis-play{
     display: flex;
@@ -195,3 +195,26 @@ hr{
     background: blue;
 }
 /* footer end */
+/* country file start */
+.ger-man{
+    width: 250px;
+    height: 200px;
+    border: 2px solid rgb(179, 156, 156);
+    border-radius: 7px;
+    background-color: #f3f1ff;
+    text-align: center;
+} 
+h5{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.flag{
+    display: flex;
+    padding-top: 30px;
+}
+.ger-man{
+    padding-left: 30px;
+}
+h3{
+        padding-left: 20px;}
+        
