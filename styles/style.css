@@ -36,11 +36,20 @@ p{
     color: white;
 }
 .button-link{
+    width: 200px;
+    height: 150px;
     background-color: red;
     text-decoration: none;
     color: bisque;
     padding: 5px 20px;
-    border-radius: 5px;}
+    border-radius: 5px;
+    transition: width 5s, height 5s ,transform 5s;
+}
+.button-link:hover {
+    width: 300px;
+    height: 200px;
+    transform: rotate(30deg);
+}
     
 /* image edit */
 .mar-celo{
@@ -217,4 +226,96 @@ h5{
 }
 h3{
         padding-left: 20px;}
-        
+        /* country file end */
+
+        /* media query start */
+        /* small device */
+        @media only screen and (max-width: 688px) {
+            .top-banner{
+                flex-direction: column;
+                width: 400px;
+                height: 710px;
+                float: none;
+            }
+            .head-on{
+                text-align: center;
+                font-size: 10px;
+                font-weight: 400;
+            }
+            .top-banner img{
+                width: 70%;
+                padding-left: 60px;
+            }
+            .dis-play{
+                flex-direction: column;
+                justify-content: center;
+                padding: 50px;
+                margin-top: 40px;
+            }
+            .full-box{
+                margin-left: 275px;
+            }
+            .blog-container{
+                grid-template-columns: repeat(1,1fr);
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 405px;
+            }
+            .button-view{
+                display: none;
+            }
+            footer {
+                margin-left: 275px;
+                height: 600px;
+            }
+            .contacts, .contact-side{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                row-gap: 20px;
+                padding-left: 20px;
+            }
+        }
+
+        /* tab device */
+
+        @media only screen and (min-width: 689px) and (max-width: 992px) {
+            .top-banner{
+                width: 100%;
+                float: none;
+            }
+            .dis-play{
+                flex-direction: column;
+                margin-top: 50px;
+            }
+            .full-box{
+                display: grid;
+                grid-template-columns: repeat(3,1fr);
+                column-gap: 20px;
+                background-color: #f3f1ff;
+                width: 750px;
+                height: 125px;
+                margin-left: 240px;
+            }
+            .blog-container{
+                grid-template-columns: repeat(2,1fr);
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 515px;
+            }
+            .button-view{
+                margin-left: 500px;
+            }
+            footer{
+                margin-left: 245px;
+                margin-top: 50px;
+                height: 300px;
+            }
+        }
+        /* for laptop or pc device */
+
+        @media only screen and (min-width: 993px) {
+            .button-view{
+                display: none;
+            }
+            
+        }
